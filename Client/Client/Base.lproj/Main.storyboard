@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A386a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Client" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFg-Kx-RNn">
+                                <rect key="frame" x="21" y="20" width="568" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="gGK-gO-Gnt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfp-XR-KF6">
+                                <rect key="frame" x="21" y="62" width="568" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="hBD-T2-gdT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="12u-hx-nMk">
+                                <rect key="frame" x="21" y="104" width="563" height="476"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tfp-XR-KF6" firstAttribute="leading" secondItem="12u-hx-nMk" secondAttribute="leading" id="AWC-Zj-MtT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kFg-Kx-RNn" secondAttribute="trailing" constant="-5" id="Agq-DS-WEa"/>
+                            <constraint firstItem="kFg-Kx-RNn" firstAttribute="leading" secondItem="Tfp-XR-KF6" secondAttribute="leading" id="F2n-YM-oHw"/>
+                            <constraint firstItem="kFg-Kx-RNn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="JGh-YA-t1c"/>
+                            <constraint firstAttribute="bottom" secondItem="12u-hx-nMk" secondAttribute="bottom" constant="20" symbolic="YES" id="Sv8-3Q-rdH"/>
+                            <constraint firstItem="12u-hx-nMk" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="YtP-Do-rOz"/>
+                            <constraint firstItem="Tfp-XR-KF6" firstAttribute="trailing" secondItem="kFg-Kx-RNn" secondAttribute="trailing" id="br0-9K-WYj"/>
+                            <constraint firstItem="kFg-Kx-RNn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="5" id="cgs-9y-B05"/>
+                            <constraint firstItem="12u-hx-nMk" firstAttribute="top" secondItem="Tfp-XR-KF6" secondAttribute="bottom" constant="8" symbolic="YES" id="eVL-Qp-jAi"/>
+                            <constraint firstItem="Tfp-XR-KF6" firstAttribute="top" secondItem="kFg-Kx-RNn" secondAttribute="bottom" constant="8" symbolic="YES" id="iTw-KF-o7J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="12u-hx-nMk" id="gEV-wy-q1m"/>
+                        <outlet property="status" destination="Tfp-XR-KF6" id="1dC-yc-k0g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
